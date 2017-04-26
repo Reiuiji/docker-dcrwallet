@@ -43,12 +43,12 @@ docker run -d --name="dcrwallet" reiuiji/dcrwallet
 ````bash
 docker run -d -p 9110:9110 -name dcrwallet reiuiji/dcrwallet
 ````
-**NOTE**: exposing port can be vary bad, make sure your RPC credentials are strong(32+).
+**NOTE**: Exposing your docker ports can be vary bad, make sure your RPC credentials are strong(32+).
 
 #### If you only want to tweak the dcrwallet.conf, you can run a temp link:
 
 ````bash
-docker run -d -p 9109:9109 -name dcrwallet -v /path/to/your/dcrwallet.conf:data/dcrwallet.conf reiuiji/dcrwallet
+docker run -d -p 9110:9110 -name dcrwallet -v /path/to/your/dcrwallet.conf:data/dcrwallet.conf reiuiji/dcrwallet
 ````
 #### If you want to run with the built in volume of the entire dcrwallet daemon:
 
