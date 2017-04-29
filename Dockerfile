@@ -8,7 +8,7 @@
 FROM centos:latest
 MAINTAINER "Reiuiji" <reiuiji@gmail.com>
 
-ENV VERSION=v1.0.0
+ENV VERSION=v1.0.1
 ENV FILE=decred-linux-amd64-$VERSION.tar.gz
 
 ENV DCRURL=https://github.com/decred/decred-binaries/releases/download/${VERSION}/${FILE}
